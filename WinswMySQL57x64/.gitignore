@@ -1,0 +1,12 @@
+*.suo
+.setup
+.svn/*
+/.vs/
+desktop.ini 
+thumbs.db  
+web.config
+bin
+data
+lib
+share
+logs
