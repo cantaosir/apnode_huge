@@ -1,0 +1,10 @@
+*.suo
+.setup
+.svn/*
+/.vs/
+desktop.ini 
+thumbs.db  
+bin/
+obj/
+packages/*
+web.config

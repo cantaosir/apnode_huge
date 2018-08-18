@@ -1,0 +1,20 @@
+当前使用的版本是 
+nginx-1.14.0.zip
+CodeIgniter 3.1.9 
+Adminer 4.6.3
+
+
+http://nginx.org/en/download.html
+
+http://nginx.org/download/nginx-1.15.2.tar.gz
+http://nginx.org/download/nginx-1.15.2.zip
+
+http://nginx.org/download/nginx-1.14.0.tar.gz
+http://nginx.org/download/nginx-1.14.0.zip
+
+
+https://codeigniter.org.cn/download
+
+https://github.com/vrana/adminer/releases/tag/v4.6.3
+
+https://roundcube.net/download/
