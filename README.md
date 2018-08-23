@@ -13,14 +13,21 @@ Apache，Redis，MongoDB，FTP，Git，SVN
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. Git，https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe
+2. TortoiseGit，https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-LanguagePack-2.7.0.0-64bit-zh_CN.msi
+3. TortoiseGit ，https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-2.7.0.0-64bit.msi
+4. mysql-5.7， https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-winx64.zip
+5. MiniThunder，  http://t.cn/zOY7u6X 
+6. MiniThunder官微，https://weibo.com/minithunder
+7. NODEJS，https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi
+8. JAVA , http://download.oracle.com/otn/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-windows-x64.exe 
+9. JAVA 官网, http://www.oracle.com/technetwork/java/javase/archive-139210.html 
+10. Tomcat 官网，https://tomcat.apache.org/download-80.cgi
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
+1. 安装必备工具，下载的 MiniThunder，    TortoiseGit，
+2. NODEJS，MySQL , Java，安装包太大，按需到官方下载，
 3. xxxx
 
 #### 参与贡献

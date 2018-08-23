@@ -4,7 +4,5 @@
 /.vs/
 desktop.ini 
 thumbs.db  
-bin/
-obj/
-packages/*
 web.config
+JAVA/jdk1.8.0_172.x64/*
