@@ -1,0 +1,1 @@
+./npm.cmd config list -l > showconf.txt
