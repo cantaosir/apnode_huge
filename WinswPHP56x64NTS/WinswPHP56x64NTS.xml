@@ -33,7 +33,7 @@ All options in other sections are optional
   <!-- Path to the executable, which should be started -->
   <executable>C:\apnode\WinswPHP56x64NTS\phpfpm.exe</executable>
   <arguments> "C:/apnode/WinswPHP56x64NTS/php-cgi.exe -c C:/apnode/WinswPHP56x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9006 -r "C:/apnode/WinswPHP56x64NTS/"</arguments>
-  <logpath>C:/apnode/WinswPHP56x64NTS/logs</logpath>
+  <logpath>C:/apnode/WinswPHP56x64NTS/logs/winsw</logpath>
 <!--
 SECTION: Installation
 These options are being used during the installation only.
