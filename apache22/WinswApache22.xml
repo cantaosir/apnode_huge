@@ -33,7 +33,7 @@ All options in other sections are optional
   <!-- Path to the executable, which should be started -->
   <workingdirectory>C:\apnode\apache22</workingdirectory>  
   <executable>C:\apnode\apache22\bin\httpd.exe</executable>
-  <arguments> -w -T -f "C:/apnode/apache22/conf/httpd.conf" </arguments>  
+  <arguments> -w -T -d "C:/apnode/apache22" -f "C:/apnode/apache22/conf/httpd.conf" </arguments>  
   <!-- -standalone -enable-named-pipe  -->
   <logpath>C:/apnode/apache22/logs/winsw</logpath>
 <!--
