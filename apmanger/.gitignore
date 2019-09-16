@@ -1,0 +1,11 @@
+*.suo
+.setup
+.svn/*
+/.vs/
+desktop.ini 
+thumbs.db  
+web.config
+JAVA/jdk1.8.0_172.x64/*
+.vs/*
+.bin/*
+obj/*

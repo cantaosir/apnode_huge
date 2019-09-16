@@ -1,7 +1,14 @@
 @cd /d %~dp0
+@echo off
+@echo.
+@ipconfig | find "IP"
 @echo.
 @echo 当前80占用
 @netstat -ano | find "LISTENING" | find "80"
+@echo.
+@nginx.exe -p %~dp0 -c %~dp0conf/nginx.conf -t 
+@echo.
+@taskkill /f /im nginx.exe 
 @echo.
 @echo 运行 NGINX
 @nginx.exe -p %~dp0 -c %~dp0conf/nginx.conf

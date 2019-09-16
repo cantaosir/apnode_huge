@@ -1,0 +1,16 @@
+https://downloads.mysql.com/archives/
+https://downloads.mysql.com/archives/router/
+https://downloads.mysql.com/archives/community/
+https://dev.mysql.com/downloads/mysql/5.7.html#downloads
+https://dev.mysql.com/downloads/file/?id=478884
+https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.23-winx64.zip
+
+msvcrt120
+https://www.microsoft.com/en-us/download/details.aspx?id=40784
+https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
+
+
+Q1: mysql5.7±¨´íthis is incompatible with sql_mode=only_full_group_by
+
+select replace( @@global.sql_mode ,'ONLY_FULL_GROUP_BY,','');
+set  @@global.sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'

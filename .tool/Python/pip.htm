@@ -1,0 +1,100 @@
+<div class="left">    
+<div class="main-box main-list m-b-15">
+<div class="content-title">
+<h2>Python 更改 PyPI 源</h2>
+<div class="tag-box">
+<span><i class="icon-clock-7"></i>2017-09-30 23:50</span>
+<span><i class="icon-eye-4"></i>1429</span>
+<span><a href="#comments"><i class="icon-chat-2"></i>0</a></span>
+<span class="tag">原创</span>
+<a href="/dave/categoryId/20" title="Python"><span class="tag">Python</span></a>
+</div>
+<div class="usernamephone">
+作者：
+<a href="/dave" target="_blank" title="Dave">
+Dave</a>
+</div>
+</div>
+<div class="content-main">本文链接：<a href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a></div>
+<div class="content-main markdown-body">
+<p>使用PIP管理Python包非常方便，关于PIP的使用可以参考如下链接：<br>Linux安装pip及使用<br><a href="http://www.cndba.cn/Expect-le/article/110">http://www.cndba.cn/Expect-le/article/110</a></p> 
+<p>但PIP模式用的是<a href="https://pypi.python.org/作为源，其访问速度太慢。">https://pypi.python.org/作为源，其访问速度太慢。</a> 所以建议使用国内的PIP源代替。 目前可用替代的PIP源有：
+</p><div style="display:none;">
+https://www.cndba.cn/dave/article/2261
+</div><a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a>
+<div style="display:none;">
+https://www.cndba.cn/dave/article/2261
+</div><a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a><p></p> 
+<p>阿里云 <a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>中国科学技术大学 <a href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirrors.ustc.edu.cn/simple/</a><br>中国科学技术大学 <a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a><br>清华大学 <a href="https://pypi.tuna.tsinghua.edu.cn/simple/">https://pypi.tuna.tsinghua.edu.cn/simple/</a></p> 
+<p>指定Pip源有两种方法：<span style="display:none;">https://www.cndba.cn/dave/article/2261</span><a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a><a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a></p> 
+<h5 id="h5-1-pip-i-"><a name="1）    在使用pip时通过-i参数指定，如：" class="reference-link"></a><span class="header-link octicon octicon-link"></span>1） 在使用pip时通过-i参数指定，如：</h5> 
+<pre><code class="lang-python">[dave@www.cndba.cn pip-9.0.1]# lsb_release -a
+LSB Version:    :base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+Distributor ID:    RedHatEnterpriseServer
+Description:    Red Hat Enterprise Linux Server release 6.7 (Santiago)
+Release:    6.7
+Codename:    Santiago
+[dave@www.cndba.cn pip-9.0.1]#
+[dave@www.cndba.cn pip-9.0.1]# python -V
+Python 2.6.6
+[dave@www.cndba.cn pip-9.0.1]# pip install psutil -i https://pypi.mirrors.ustc.edu.cn/simple/
+DEPRECATION: Python 2.6 is no longer supported by the Python core team, please upgrade your Python. A future version of pip will drop support for Python 2.6
+Collecting psutil
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#snimissingwarning.
+SNIMissingWarning
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+InsecurePlatformWarning
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+InsecurePlatformWarning
+Downloading https://mirrors.ustc.edu.cn/pypi/web/packages/d3/0a/74dcbb162554909b208e5dbe9f4e7278d78cc27470993e05177005e627d0/psutil-5.3.1.tar.gz (397kB)
+100% |████████████████████████████████| 399kB 1.6MB/s 
+Installing collected packages: psutil
+Running setup.py install for psutil ... done
+Successfully installed psutil-5.3.1
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+InsecurePlatformWarning
+</code></pre> 
+<p>如果报错，可以再加上—trusted-host选项：</p> 
+<pre><code class="lang-python">pip install psutil -i https://pypi.mirrors.ustc.edu.cn/simple/ --trusted-host pypi.mirrors.ustc.edu.cn
+</code></pre> 
+<blockquote> 
+<p>这里提示我们，Python 2.6 将不在倍Python 核心团队支持，让我们升级Python版本。 这里我们用的是Linux 6.7。 默认Python版本是2.6.6。 在Linux 7.x中，默认Python的版本就是2.7了。 <a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a></p> 
+</blockquote> 
+<h5 id="h5-2-"><a name="2）    配置成默认的源" class="reference-link"></a><span class="header-link octicon octicon-link"></span>2） 配置成默认的源</h5> 
+<p>第一种方法，每次都要指定源，比较麻烦。所以可以通过指定配置文件，来修改默认的PIP源。<a style="display:none;" href="https://www.cndba.cn/dave/article/2261">https://www.cndba.cn/dave/article/2261</a></p> 
+<p>修改配置文件，如不存在，则创建：</p> 
+<blockquote> 
+<p>linux的文件在~/.pip/pip.conf，<br>windows在%APPDATA%/pip/pip.ini），</p> 
+</blockquote> 
+<pre><code class="lang-python">[dave@www.cndba.cn ~]# mkdir ~/.pip/
+[dave@www.cndba.cn ~]# touch ~/.pip/pip.conf
+</code></pre> 
+<p>添加以下内容：</p> 
+<pre><code class="lang-python">[dave@www.cndba.cn ~]# cat ~/.pip/pip.conf 
+[global]
+index-url = https://pypi.mirrors.ustc.edu.cn/simple/
+[install]
+trusted-host= pypi.mirrors.ustc.edu.cn
+</code></pre> 
+<p>这样在使用pip来安装时，会默认调用该镜像。<span style="display:none;">https://www.cndba.cn/dave/article/2261</span></p> 
+<pre><code class="lang-python">[dave@www.cndba.cn ~]# pip install ab
+DEPRECATION: Python 2.6 is no longer supported by the Python core team, please upgrade your Python. A future version of pip will drop support for Python 2.6
+Collecting ab
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#snimissingwarning.
+SNIMissingWarning
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+InsecurePlatformWarning
+/usr/lib/python2.6/site-packages/pip-9.0.1-py2.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+InsecurePlatformWarning
+Downloading https://mirrors.ustc.edu.cn/pypi/web/packages/a4/6a/7ebdd049b53b1e0084e9ec36fefddc2baaddc53b432caa7fd1d4674de26c/ab-0.3.tar.gz
+Installing collected packages: ab
+Running setup.py install for ab ... done
+Successfully installed ab-0.3
+[dave@www.cndba.cn ~]#
+</code></pre> 
+<p>这里成功的使用了USTC的源，而不是默认的。</p>
+<p class="col-red">版权声明：本文为博主原创文章，未经博主允许不得转载。</p>
+</div>
+<div class="clear"></div>
+</div>
+</div>
