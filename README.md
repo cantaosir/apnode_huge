@@ -5,8 +5,6 @@ Windows （或包括Linux MacOS）通过 NodeJS 管理服务的管理工具集
 Nginx，PHP，MySQL， 扩展，
 Apache，Redis，MongoDB，FTP，Git，SVN
 
-
-
 #### 软件架构
 软件架构说明
 
@@ -19,17 +17,30 @@ Apache，Redis，MongoDB，FTP，Git，SVN
 4. mysql-5.7， https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-winx64.zip
 5. MiniThunder，  http://t.cn/zOY7u6X 
 6. MiniThunder官微，https://weibo.com/minithunder
-7. NODEJS，https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi
-8. JAVA , http://download.oracle.com/otn/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-windows-x64.exe 
-9. JAVA 官网, http://www.oracle.com/technetwork/java/javase/archive-139210.html 
-10. Tomcat 官网，https://tomcat.apache.org/download-80.cgi
+7. NODEJS，https://nodejs.org/zh-cn/download/  
+    > https://nodejs.org/dist/v12.13.0/node-v12.13.0-win-x64.zip  
+    > https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi 旧版  
+
+8. JAVA ,   
+    > http://www.oracle.com/technetwork/java/javase/archive-139210.html
+    > http://download.oracle.com/otn/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-windows-x64.exe 
+
+9. Tomcat  
+    > 官网地址 https://tomcat.apache.org/download-80.cgi
 
 #### 使用说明
-
-1. 安装必备工具，下载的 MiniThunder，    TortoiseGit，
-2. NODEJS，MySQL , Java，安装包太大，按需到官方下载，
-3. xxxx
-
+1. apnode, 为了方便开发环境搭建而准备的套件，默认放到 C: 下即可
+2. 安装必备工具，下载的 MiniThunder， TortoiseGit，
+3. NODEJS MySQL Java 按需到官方下载 
+4. FileZillaClient 中包含了WinSCP 和 Putty ，FileZillaServer 为FTP服务
+5. Redis Server 和 Memcache 版本是从网络上收集的
+6. Apache 含 PHP54TS 和 subversion 
+7. Nginx 配套使用 WinswPHP56x64NTS，含有较多插件 events,mongodb,redis,sphinx,wincache,xdebug,yaf,win32ps,
+8. FRP Ngrok 集成方便一些测试
+9. .tool 目录下有NODE 和 MySQL 的配置文件
+10. start_nginx.cmd，start_apache.cmd，start_PHP56.cmd，是启动快捷方式
+11. MysqlRoute 做测试读写分离用
+12. apmanger 准备用C#写的管理工具，说不定也可以成为一个Apache Friends 工具套件
 #### 参与贡献
 
 1. Fork 本项目
@@ -37,12 +48,7 @@ Apache，Redis，MongoDB，FTP，Git，SVN
 3. 提交代码
 4. 新建 Pull Request
 
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 相关引用
+1. Winsw，方便的应用转服务工具
+2. phpfpm 虽然有官方的fastcgi，但是看起来似乎这个更和谐
+3. 
