@@ -6,23 +6,23 @@ Nginx，PHP，MySQL， 扩展，
 Apache，Redis，MongoDB，FTP，Git，SVN
 
 #### 软件目录架构
-使用 Winsw 将一些程序转为服务运行，
-\apnode\ahost 放默认网站文件 ，
-\apnode\.tool 放常用工具和一些配置文件 ，
-\apnode\apmanger 为C#管理工具，目前未开发，生产管理文件 apmanger.exe 当前仅为示例占坑
-运行库 vcredist 需要自行安装，PHP程序目录下有VisualStudio2012_vcredist_x64.exe
+使用 Winsw 将一些程序转为服务运行，  
+\apnode\ahost 放默认网站文件 ，  
+\apnode\.tool 放常用工具和一些配置文件 ，  
+\apnode\apmanger 为C#管理工具，目前未开发，生产管理文件 apmanger.exe 当前仅为示例占坑  
+运行库 vcredist 需要自行安装，PHP程序目录下有VisualStudio2012_vcredist_x64.exe  
 
 #### 安装教程
 
 1. Git，
-    > https://www.git-scm.com/download/win 官方下载首页
-    > https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe
+    > https://www.git-scm.com/download/win 官方下载首页  
+    > https://github.com/git-for-windows/git/releases/download/v2.18.0.windows.1/Git-2.18.0-64-bit.exe 
 2. TortoiseGit， 
-    > https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-2.7.0.0-64bit.msi 
-    > https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-LanguagePack-2.7.0.0-64bit-zh_CN.msi 中文包
-3. MiniThunder， 小巧的下载工具，
+    > https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-2.7.0.0-64bit.msi   
+    > https://download.tortoisegit.org/tgit/2.7.0.0/TortoiseGit-LanguagePack-2.7.0.0-64bit-zh_CN.msi 中文包  
+3. MiniThunder， 小巧的下载工具，  
     > http://t.cn/zOY7u6X 
-    > https://weibo.com/minithunder 官微
+    > https://weibo.com/minithunder 官微 
 4. mysql-5.7，
     > https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-winx64.zip
 5. JAVA ,   
