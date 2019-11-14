@@ -35,7 +35,7 @@ All options in other sections are optional
   <executable>C:\apnode\WinswMySQL57x64\bin\mysqld.exe</executable>
   <arguments> "--defaults-file=C:/apnode/WinswMySQL57x64/my.ini"  "--datadir=C:/apnode/WinswMySQL57x64/data/" </arguments>  
   <!-- -standalone -enable-named-pipe  -->
-  <logpath>C:/apnode/WinswMySQL57x64/logs/winsw</logpath>
+  <logpath>C:/apnode/WinswMySQL57x64/logs</logpath>
 <!--
 SECTION: Installation
 These options are being used during the installation only.

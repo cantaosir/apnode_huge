@@ -25,28 +25,29 @@ REM start %pack_path%bin\notepad2\Notepad2.exe %pack_path%my.ini
 @echo.
 @echo any key to initialize and search A temporary password is generated for root
 @pause
-REM %pack_path%bin\mysqld.exe --install WinswMySQL56x64 --defaults-file=%pack_path%my.ini 
-%pack_path%bin\mysqld.exe --initialize --defaults-file=%pack_path%my.ini  --datadir=%pack_path%data
+REM %pack_path%bin\mysqld.exe --install WinswMySQL57x64 --defaults-file=%pack_path%my.ini  
+%pack_path%bin\mysqld.exe --initialize --datadir=%pack_path%data
 start notepad data/err.log
 :pack_install
 @echo.
-@echo any key to install 
+@echo any key to install by WinswMySQL57x64
 @pause
-%pack_path%bin\mysqld.exe --install WinswMySQL56x64 --defaults-file=%pack_path%my.ini 
+REM %pack_path%bin\mysqld.exe --install WinswMySQL57x64 --defaults-file=%pack_path%my.ini 
 REM %pack_path%bin\mysqld.exe --initialize --defaults-file=%pack_path%my.ini  --datadir=%pack_path%data
-
+@%pack_path%WinswMySQL57x64.exe install
+@mkdir %pack_path%logs
 :pack_start
 echo.
 echo any key to start 
 pause 
-REM sc start WinswMySQL56x64 
+@sc start WinswMySQL57x64 
 :pack_stop
 echo.
 echo any key to stop 
 pause 
-REM sc stop WinswMySQL56x64 
+REM sc stop WinswMySQL57x64 
 :pack_uninstall
 echo any key to uninstall
 echo.
 pause 
-REM sc delete WinswMySQL56x64
+REM sc delete WinswMySQL57x64
