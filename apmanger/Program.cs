@@ -9,6 +9,7 @@ namespace apmanger
     static class Program
     {
         public static APNode apnode = new APNode();
+        public static Form1 mainForm;
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
@@ -17,7 +18,22 @@ namespace apmanger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            mainForm = new Form1();
+            Application.Run(mainForm);
+        }
+        public static void hideMainFrom() {
+            if (mainForm != null) {
+                mainForm.TopMost = false;
+                mainForm.WindowState = FormWindowState.Minimized;
+            }
+        }
+        public static void showMainFrom()
+        {
+            if (mainForm != null)
+            {
+                mainForm.TopMost = false;
+                mainForm.WindowState = FormWindowState.Normal;
+            }
         }
     }
 }

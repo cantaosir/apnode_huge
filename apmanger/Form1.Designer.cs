@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Memcache = new System.Windows.Forms.Button();
             this.btn_redis = new System.Windows.Forms.Button();
             this.btn_php56 = new System.Windows.Forms.Button();
             this.btn_nginx = new System.Windows.Forms.Button();
-            this.btn_filezilla = new System.Windows.Forms.Button();
-            this.btn_mysql = new System.Windows.Forms.Button();
-            this.btn_apache = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_mysql = new System.Windows.Forms.Button();
+            this.btn_filezilla = new System.Windows.Forms.Button();
+            this.btn_apache = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rich_main = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
@@ -50,15 +51,15 @@
             this.panel1.Controls.Add(this.btn_redis);
             this.panel1.Controls.Add(this.btn_php56);
             this.panel1.Controls.Add(this.btn_nginx);
-            this.panel1.Controls.Add(this.btn_filezilla);
-            this.panel1.Controls.Add(this.btn_mysql);
-            this.panel1.Controls.Add(this.btn_apache);
             this.panel1.Controls.Add(this.btn_exit);
+            this.panel1.Controls.Add(this.btn_mysql);
+            this.panel1.Controls.Add(this.btn_filezilla);
+            this.panel1.Controls.Add(this.btn_apache);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 50);
+            this.panel1.Size = new System.Drawing.Size(776, 50);
             this.panel1.TabIndex = 0;
             // 
             // btn_Memcache
@@ -70,6 +71,7 @@
             this.btn_Memcache.TabIndex = 7;
             this.btn_Memcache.Text = "Memcache";
             this.btn_Memcache.UseVisualStyleBackColor = true;
+            this.btn_Memcache.Click += new System.EventHandler(this.btn_Memcache_Click);
             // 
             // btn_redis
             // 
@@ -80,6 +82,7 @@
             this.btn_redis.TabIndex = 6;
             this.btn_redis.Text = "Redis";
             this.btn_redis.UseVisualStyleBackColor = true;
+            this.btn_redis.Click += new System.EventHandler(this.btn_redis_Click);
             // 
             // btn_php56
             // 
@@ -90,6 +93,7 @@
             this.btn_php56.TabIndex = 5;
             this.btn_php56.Text = "PHP56";
             this.btn_php56.UseVisualStyleBackColor = true;
+            this.btn_php56.Click += new System.EventHandler(this.btn_php56_Click);
             // 
             // btn_nginx
             // 
@@ -100,26 +104,40 @@
             this.btn_nginx.TabIndex = 4;
             this.btn_nginx.Text = "Nginx";
             this.btn_nginx.UseVisualStyleBackColor = true;
+            this.btn_nginx.Click += new System.EventHandler(this.btn_nginx_Click);
             // 
-            // btn_filezilla
+            // btn_exit
             // 
-            this.btn_filezilla.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_filezilla.Location = new System.Drawing.Point(130, 0);
-            this.btn_filezilla.Name = "btn_filezilla";
-            this.btn_filezilla.Size = new System.Drawing.Size(65, 48);
-            this.btn_filezilla.TabIndex = 3;
-            this.btn_filezilla.Text = "FZilla";
-            this.btn_filezilla.UseVisualStyleBackColor = true;
+            this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_exit.Location = new System.Drawing.Point(709, 0);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(65, 48);
+            this.btn_exit.TabIndex = 0;
+            this.btn_exit.Text = "Exit";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_mysql
             // 
             this.btn_mysql.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_mysql.Location = new System.Drawing.Point(65, 0);
+            this.btn_mysql.Location = new System.Drawing.Point(130, 0);
             this.btn_mysql.Name = "btn_mysql";
             this.btn_mysql.Size = new System.Drawing.Size(65, 48);
             this.btn_mysql.TabIndex = 2;
             this.btn_mysql.Text = "MYSQL";
             this.btn_mysql.UseVisualStyleBackColor = true;
+            this.btn_mysql.Click += new System.EventHandler(this.btn_mysql_Click);
+            // 
+            // btn_filezilla
+            // 
+            this.btn_filezilla.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_filezilla.Location = new System.Drawing.Point(65, 0);
+            this.btn_filezilla.Name = "btn_filezilla";
+            this.btn_filezilla.Size = new System.Drawing.Size(65, 48);
+            this.btn_filezilla.TabIndex = 3;
+            this.btn_filezilla.Text = "FZilla";
+            this.btn_filezilla.UseVisualStyleBackColor = true;
+            this.btn_filezilla.Click += new System.EventHandler(this.btn_filezilla_Click);
             // 
             // btn_apache
             // 
@@ -132,17 +150,6 @@
             this.btn_apache.UseVisualStyleBackColor = true;
             this.btn_apache.Click += new System.EventHandler(this.btn_apache_Click);
             // 
-            // btn_exit
-            // 
-            this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_exit.Location = new System.Drawing.Point(729, 0);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(65, 48);
-            this.btn_exit.TabIndex = 0;
-            this.btn_exit.Text = "Exit";
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
@@ -152,7 +159,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 546);
+            this.panel2.Size = new System.Drawing.Size(776, 526);
             this.panel2.TabIndex = 1;
             // 
             // rich_main
@@ -161,7 +168,7 @@
             this.rich_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rich_main.Location = new System.Drawing.Point(0, 0);
             this.rich_main.Name = "rich_main";
-            this.rich_main.Size = new System.Drawing.Size(794, 544);
+            this.rich_main.Size = new System.Drawing.Size(774, 524);
             this.rich_main.TabIndex = 0;
             this.rich_main.Text = "";
             // 
@@ -169,18 +176,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 596);
+            this.ClientSize = new System.Drawing.Size(776, 576);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APManger";
-            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

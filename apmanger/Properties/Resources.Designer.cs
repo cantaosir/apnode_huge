@@ -59,5 +59,15 @@ namespace apmanger.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon icon_128 {
+            get {
+                object obj = ResourceManager.GetObject("icon_128", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

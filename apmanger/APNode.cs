@@ -9,7 +9,7 @@ namespace apmanger
 {
     class APNode
     {
-        public static String _root = "D:\apnode";
+        public static String _root = "C:\apnode";
 
         // 检查并初始化
         public static String _init_msg = "";
@@ -22,23 +22,31 @@ namespace apmanger
             {
                 return Directory.Exists(_root + path);
             }
-            catch (Exception ex) { }
+            catch (Exception ex) {
+                ex.ToString();
+            }
             return false;
         }
-        public static void run_appache(DataReceivedEventHandler OutputHandler)
+        public static void exec_sync(string cmd,string arg,DataReceivedEventHandler OutputHandler)
         {
-            Process process = new Process();
-            process.StartInfo.FileName = "cmd.exe";
-            process.StartInfo.Arguments = "/C DIR";
-            process.StartInfo.UseShellExecute = false;
-            process.StartInfo.RedirectStandardOutput = true;
-            process.StartInfo.RedirectStandardError = true;
-            process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
-            process.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
-            process.Start();
-            process.BeginOutputReadLine();
-            process.BeginErrorReadLine();
-            process.WaitForExit();
+            try{
+                Process process = new Process();
+                process.StartInfo.FileName = cmd;
+                process.StartInfo.Arguments = arg;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                process.StartInfo.RedirectStandardError = true;
+                process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
+                process.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
+                process.Start();
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+                process.WaitForExit();
+            }catch (Exception ex){
+                if (Program.mainForm != null) {
+                    Program.mainForm.Text = ex.Message +">>"+ ex.ToString();
+                } 
+            }
         }
 
         /// <summary>
@@ -47,21 +55,22 @@ namespace apmanger
         /// <param name="command">需要执行的Command</param>
         /// <param name="output">输出</param>
         /// <param name="error">错误</param>
-        public static void ExecuteCommand(string command, out string output, out string error)
+        public static void ExecuteCommand(string command, string arguments, out string output, out string error)
         {
             try
             {
+                Program.hideMainFrom();
                 //创建一个进程
                 Process process = new Process();
                 process.StartInfo.FileName = command;
 
                 // 必须禁用操作系统外壳程序
                 process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.CreateNoWindow = false;
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.RedirectStandardError = true;
-
-
+                process.StartInfo.Arguments = arguments;
+                process.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 //启动进程
                 process.Start();
 
@@ -96,6 +105,7 @@ namespace apmanger
                 output = null;
                 error = null;
             }
+            Program.showMainFrom();
         }
 
         static void OutputHandler2(object sendingProcess, DataReceivedEventArgs outLine)
