@@ -80,6 +80,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ApiTool.cs" />
+    <Compile Include="Util\Hotkey.cs" />
+    <Compile Include="Util\InvokeDll.cs" />
+    <Compile Include="Util\Test.cs" />
+    <Compile Include="Util\VKey.cs" />
+    <Compile Include="Util\WinAPI.cs" />
+    <Compile Include="Util\WinMutex.cs" />
+    <Compile Include="Util\WinTray.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

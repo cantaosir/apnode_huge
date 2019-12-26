@@ -59,7 +59,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 50);
+            this.panel1.Size = new System.Drawing.Size(772, 50);
             this.panel1.TabIndex = 0;
             // 
             // btn_Memcache
@@ -109,7 +109,7 @@
             // btn_exit
             // 
             this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_exit.Location = new System.Drawing.Point(709, 0);
+            this.btn_exit.Location = new System.Drawing.Point(705, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(65, 48);
             this.btn_exit.TabIndex = 0;
@@ -159,7 +159,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 526);
+            this.panel2.Size = new System.Drawing.Size(772, 522);
             this.panel2.TabIndex = 1;
             // 
             // rich_main
@@ -168,7 +168,7 @@
             this.rich_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rich_main.Location = new System.Drawing.Point(0, 0);
             this.rich_main.Name = "rich_main";
-            this.rich_main.Size = new System.Drawing.Size(774, 524);
+            this.rich_main.Size = new System.Drawing.Size(770, 520);
             this.rich_main.TabIndex = 0;
             this.rich_main.Text = "";
             // 
@@ -176,19 +176,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 576);
+            this.ClientSize = new System.Drawing.Size(772, 572);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APManger";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

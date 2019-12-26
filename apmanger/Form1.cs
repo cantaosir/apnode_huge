@@ -20,6 +20,10 @@ namespace apmanger
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            try {
+               //  Util.WinTray.tray_init();
+            }
+            catch (Exception ex) { }
             rich_main.Text = AppDomain.CurrentDomain.BaseDirectory;
             APNode.exec_sync("cmd", "/c dir /a /b winsw*", handleDataReceivedEvent);
             Program.showMainFrom();
