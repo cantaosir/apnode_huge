@@ -43,7 +43,8 @@ Apache，Redis，MongoDB，FTP，Git，SVN
     > https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-winx64.zip
 4. Tomcat , 运行JSP，
     > https://tomcat.apache.org/download-80.cgi
-	
+5. Python, anaconda 集成 conda 包管理工具的Python的环境
+	> https://www.anaconda.com/distribution/ 
 #### 使用说明 
 1. apnode, 为了方便开发环境搭建而准备的套件，默认放到 C: 下即可
 2. 安装必备工具，下载的 MiniThunder， TortoiseGit，
