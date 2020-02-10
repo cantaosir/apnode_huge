@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<FileZilla3>
-    <Layout Builddate="2011-08-28" Buildtime="23:15:06">
-        <Resources>
-            <xrc file="dialogs.xrc" date="1296793820" />
-            <xrc file="menus.xrc" date="1313379018" />
-            <xrc file="netconfwizard.xrc" date="1218679220" />
-            <xrc file="quickconnectbar.xrc" date="1272192500" />
-            <xrc file="settings.xrc" date="1299213018" />
-            <xrc file="toolbar.xrc" date="1264906818" />
-        </Resources>
-        <Language id="zh_CN" date="1314566340">
-            <Font font="0;-12;0;0;0;400;0;0;0;134;0;0;0;0;MS Shell Dlg 2" width="712" height="14" />
-            <Dialog name="Settings" width="425" />
-        </Language>
-    </Layout>
+<?xml version="1.0"?>
+<FileZilla3 version="3.46.3" platform="windows">
+	<Layout Builddate="2019-12-23" Buildtime="15:50:12">
+		<Resources>
+			<xrc file="certificate.xrc" date="1577112761" />
+			<xrc file="dialogs.xrc" date="1577112761" />
+			<xrc file="netconfwizard.xrc" date="1577112761" />
+			<xrc file="settings.xrc" date="1577112761" />
+			<xrc file="storj.xrc" date="1577112761" />
+		</Resources>
+		<Language id="zh_CN" date="1577112761">
+			<Font font="0;-12;0;0;0;400;0;0;0;1;0;0;0;0;Microsoft YaHei UI" width="750" height="17" />
+			<Dialog name="Settings" width="492" />
+		</Language>
+	</Layout>
 </FileZilla3>
