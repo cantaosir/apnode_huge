@@ -1,0 +1,119 @@
+2020-03-26 15:55:50,634 DEBUG - Starting ServiceWrapper in the CLI mode
+2020-03-26 15:55:51,663 INFO  - Installing the service with id 'WinswPHP73x64NTS'
+2020-03-26 15:55:51,676 DEBUG - Completed. Exit code is 0
+2020-03-26 15:56:09,684 INFO  - Starting ServiceWrapper in the service mode
+2020-03-26 15:56:11,415 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 15:56:11,418 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 15:56:13,134 INFO  - Started process 10936
+2020-03-26 15:56:13,140 DEBUG - Forwarding logs of the process System.Diagnostics.Process (phpfpm) to winsw.TimeBasedRollingLogAppender
+2020-03-26 16:05:17,212 INFO  - Stopping WinswPHP73x64NTS
+2020-03-26 16:05:17,213 DEBUG - ProcessKill 10936
+2020-03-26 16:05:17,376 INFO  - Found child process: 13732 Name: conhost.exe
+2020-03-26 16:05:17,377 INFO  - Found child process: 22968 Name: php-cgi.exe
+2020-03-26 16:05:17,378 INFO  - Found child process: 15272 Name: php-cgi.exe
+2020-03-26 16:05:17,437 INFO  - Stopping process 13732
+2020-03-26 16:05:17,445 INFO  - Send SIGINT 13732
+2020-03-26 16:05:17,447 WARN  - SIGINT to 13732 failed - Killing as fallback
+2020-03-26 16:05:17,513 INFO  - Found child process: 23916 Name: conhost.exe
+2020-03-26 16:05:17,580 INFO  - Stopping process 23916
+2020-03-26 16:05:17,588 INFO  - Send SIGINT 23916
+2020-03-26 16:05:17,589 WARN  - SIGINT to 23916 failed - Killing as fallback
+2020-03-26 16:05:17,590 INFO  - Stopping process 22968
+2020-03-26 16:05:17,599 INFO  - Send SIGINT 22968
+2020-03-26 16:05:17,601 WARN  - SIGINT to 22968 failed - Killing as fallback
+2020-03-26 16:05:17,665 INFO  - Found child process: 22424 Name: conhost.exe
+2020-03-26 16:05:17,726 INFO  - Stopping process 22424
+2020-03-26 16:05:17,734 INFO  - Send SIGINT 22424
+2020-03-26 16:05:17,735 WARN  - SIGINT to 22424 failed - Killing as fallback
+2020-03-26 16:05:17,736 INFO  - Stopping process 15272
+2020-03-26 16:05:17,743 INFO  - Send SIGINT 15272
+2020-03-26 16:05:17,745 WARN  - SIGINT to 15272 failed - Killing as fallback
+2020-03-26 16:05:17,746 INFO  - Stopping process 10936
+2020-03-26 16:05:17,754 INFO  - Send SIGINT 10936
+2020-03-26 16:05:17,755 WARN  - SIGINT to 10936 failed - Killing as fallback
+2020-03-26 16:05:17,756 INFO  - Finished WinswPHP73x64NTS
+2020-03-26 16:05:17,758 DEBUG - Completed. Exit code is 0
+2020-03-26 16:05:18,650 INFO  - Starting ServiceWrapper in the service mode
+2020-03-26 16:05:18,671 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:05:18,673 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:05:18,693 INFO  - Started process 25384
+2020-03-26 16:05:18,698 DEBUG - Forwarding logs of the process System.Diagnostics.Process (phpfpm) to winsw.TimeBasedRollingLogAppender
+2020-03-26 16:06:12,685 INFO  - Stopping WinswPHP73x64NTS
+2020-03-26 16:06:12,686 DEBUG - ProcessKill 25384
+2020-03-26 16:06:12,783 INFO  - Found child process: 8960 Name: conhost.exe
+2020-03-26 16:06:12,785 INFO  - Found child process: 10208 Name: php-cgi.exe
+2020-03-26 16:06:12,786 INFO  - Found child process: 21792 Name: php-cgi.exe
+2020-03-26 16:06:12,844 INFO  - Stopping process 8960
+2020-03-26 16:06:12,852 INFO  - Send SIGINT 8960
+2020-03-26 16:06:12,854 WARN  - SIGINT to 8960 failed - Killing as fallback
+2020-03-26 16:06:12,914 INFO  - Found child process: 19576 Name: conhost.exe
+2020-03-26 16:06:12,978 INFO  - Stopping process 19576
+2020-03-26 16:06:12,986 INFO  - Send SIGINT 19576
+2020-03-26 16:06:12,987 WARN  - SIGINT to 19576 failed - Killing as fallback
+2020-03-26 16:06:12,988 INFO  - Stopping process 10208
+2020-03-26 16:06:12,998 INFO  - Send SIGINT 10208
+2020-03-26 16:06:13,000 WARN  - SIGINT to 10208 failed - Killing as fallback
+2020-03-26 16:06:13,071 INFO  - Found child process: 15472 Name: conhost.exe
+2020-03-26 16:06:13,134 INFO  - Stopping process 15472
+2020-03-26 16:06:13,141 INFO  - Send SIGINT 15472
+2020-03-26 16:06:13,142 WARN  - SIGINT to 15472 failed - Killing as fallback
+2020-03-26 16:06:13,143 INFO  - Stopping process 21792
+2020-03-26 16:06:13,153 INFO  - Send SIGINT 21792
+2020-03-26 16:06:13,154 WARN  - SIGINT to 21792 failed - Killing as fallback
+2020-03-26 16:06:13,155 INFO  - Stopping process 25384
+2020-03-26 16:06:13,165 INFO  - Send SIGINT 25384
+2020-03-26 16:06:13,166 WARN  - SIGINT to 25384 failed - Killing as fallback
+2020-03-26 16:06:13,168 INFO  - Finished WinswPHP73x64NTS
+2020-03-26 16:06:13,169 DEBUG - Completed. Exit code is 0
+2020-03-26 16:06:14,104 INFO  - Starting ServiceWrapper in the service mode
+2020-03-26 16:06:14,124 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:06:14,127 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:06:14,147 INFO  - Started process 12216
+2020-03-26 16:06:14,152 DEBUG - Forwarding logs of the process System.Diagnostics.Process (phpfpm) to winsw.TimeBasedRollingLogAppender
+2020-03-26 16:17:59,873 INFO  - Stopping WinswPHP73x64NTS
+2020-03-26 16:17:59,874 DEBUG - ProcessKill 12216
+2020-03-26 16:18:00,040 INFO  - Found child process: 10204 Name: conhost.exe
+2020-03-26 16:18:00,041 INFO  - Found child process: 9704 Name: php-cgi.exe
+2020-03-26 16:18:00,042 INFO  - Found child process: 10356 Name: php-cgi.exe
+2020-03-26 16:18:00,104 INFO  - Stopping process 10204
+2020-03-26 16:18:00,113 INFO  - Send SIGINT 10204
+2020-03-26 16:18:00,114 WARN  - SIGINT to 10204 failed - Killing as fallback
+2020-03-26 16:18:00,177 INFO  - Found child process: 16940 Name: conhost.exe
+2020-03-26 16:18:00,238 INFO  - Stopping process 16940
+2020-03-26 16:18:00,244 INFO  - Send SIGINT 16940
+2020-03-26 16:18:00,245 WARN  - SIGINT to 16940 failed - Killing as fallback
+2020-03-26 16:18:00,246 INFO  - Stopping process 9704
+2020-03-26 16:18:00,258 INFO  - Send SIGINT 9704
+2020-03-26 16:18:00,259 WARN  - SIGINT to 9704 failed - Killing as fallback
+2020-03-26 16:18:00,327 INFO  - Found child process: 12828 Name: conhost.exe
+2020-03-26 16:18:00,391 INFO  - Stopping process 12828
+2020-03-26 16:18:00,399 INFO  - Send SIGINT 12828
+2020-03-26 16:18:00,400 WARN  - SIGINT to 12828 failed - Killing as fallback
+2020-03-26 16:18:00,401 INFO  - Stopping process 10356
+2020-03-26 16:18:00,409 INFO  - Send SIGINT 10356
+2020-03-26 16:18:00,411 WARN  - SIGINT to 10356 failed - Killing as fallback
+2020-03-26 16:18:00,413 INFO  - Stopping process 12216
+2020-03-26 16:18:00,423 INFO  - Send SIGINT 12216
+2020-03-26 16:18:00,423 WARN  - SIGINT to 12216 failed - Killing as fallback
+2020-03-26 16:18:00,425 INFO  - Finished WinswPHP73x64NTS
+2020-03-26 16:18:00,427 DEBUG - Completed. Exit code is 0
+2020-03-26 16:18:01,294 INFO  - Starting ServiceWrapper in the service mode
+2020-03-26 16:18:01,315 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:18:01,318 INFO  - Starting C:\apnode\WinswPHP73x64NTS\phpfpm.exe  "C:/apnode/WinswPHP73x64NTS/php-cgi.exe -c C:/apnode/WinswPHP73x64NTS/php.ini" -n 2 -i 127.0.0.1 -p 9007 -r "C:/apnode/WinswPHP73x64NTS/"
+2020-03-26 16:18:01,338 INFO  - Started process 17048
+2020-03-26 16:18:01,344 DEBUG - Forwarding logs of the process System.Diagnostics.Process (phpfpm) to winsw.TimeBasedRollingLogAppender
+2020-03-26 17:41:24,483 INFO  - Stopping WinswPHP73x64NTS
+2020-03-26 17:41:24,483 DEBUG - ProcessKill 17048
+2020-03-26 17:41:24,603 WARN  - Failed to locate children of the process with PID=17048. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x8007045B): 系统正在关机。 (异常来自 HRESULT:0x8007045B)
+   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Management.ManagementScope.InitializeGuts(Object o)
+   在 System.Management.ManagementScope.Initialize()
+   在 System.Management.ManagementObjectSearcher.Initialize()
+   在 System.Management.ManagementObjectSearcher.Get()
+   在 winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2020-03-26 17:41:24,623 INFO  - Stopping process 17048
+2020-03-26 17:41:24,623 INFO  - Send SIGINT 17048
+2020-03-26 17:41:24,653 INFO  - SIGINT to17048 successful
+2020-03-26 17:41:24,653 INFO  - Finished WinswPHP73x64NTS
+2020-03-26 17:41:24,673 DEBUG - Completed. Exit code is 0
